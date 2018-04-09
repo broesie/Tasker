@@ -15,14 +15,14 @@ Before you start, refresh your contacts:
 - Click on **Force Refresh Contacts**
 
 ### Step 2: Creating the profile
-First, let's make a new profile, called **AV Contacts - Address**
+First, let's make a new profile, called **AV Contacts - Mobile Number**
 - Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
 - Choose the **The Hard Way**
 - Command: ```mobile of (?<name>.+)```
 - **Enable Regex**
 
 ### Step 4: Creating the task
-Now we make our task, called **AV Contacts - Address**
+Now we make our task, called **AV Contacts - Mobile Number**
 - **AutoContacts Query 2.0**
   - Names: **%name**
   - Sort Direction: **Ascending**
