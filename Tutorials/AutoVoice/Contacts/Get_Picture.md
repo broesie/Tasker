@@ -18,9 +18,24 @@ Before you start, refresh your contacts:
 First, let's make a new profile, called **AV Contacts - Picture**
 - Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
 - Choose the **The Hard Way**
-- Command: **picture of foto van (?<name>.+)**
+- Command: **picture of (?<name>.+)**
 - **Enable Regex**
 
 ### Step 3: Creating the task
 Now we make our task, called **AV Contacts - Picture**
+- **AutoContacts Query 2.0**
+  - Names: **%name**
+  - Sort Direction: **Ascending**
+  - Fields to get: **Photo,Name,Id**
+  - **Joiner=:=**
+- **If %acname is Set**
+  - **Autocontacts Details**
+    - Contact Id: **%acid(1)**
+    - Get Picture: **True**
+    - Full Size: **True**
+  - Flash: **%acpicturefile**
+  - Open File: **%acpicturefile **
+- **Else if %acname!Set**
+  - Say: **There is no contact found with that name**
+- **End if**
 
