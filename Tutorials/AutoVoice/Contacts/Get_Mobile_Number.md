@@ -30,7 +30,7 @@ Now we make our task, called **AV Contacts - Address**
   - **Joiner=:=**
 - **If %acname is Set**
   - Variable Set: **%index** to **%acnumber_type(#?Mobile)**
-  - Variable Split: **Name:%index** Splitter:**,**
+  - Variable Split: **Name:%index** Splitter:**,** (splitter is a comma)
     - **If %index!~0**
       - Flash: **%acname %acnumber(%index1)**
       - Say: **The mobile phone number of %acname is %acnumber(%index1)**
