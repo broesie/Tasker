@@ -8,20 +8,23 @@ We can use a command like this: **show me a picture of John.**
 - AutoVoice
 - Autocontacts
 
-### Step 1: AutoVoice & AutoContacts
+### Step 1: Create a folder where the picture will be stored
+Create a folder **AutoContacts** on your phone. Mostly the full path will be something like this: **storage/emulated/0/AutoContacts/**
+
+### Step 2: AutoVoice & AutoContacts
 Be sure that AutoVoice and AutoContacts are correctly installed. Also be sure, that all your contacts are listed in the database.
 Before you start, refresh your contacts:
 - **Open AutoContacts**
 - Click on **Force Refresh Contacts**
 
-### Step 2: Creating the profile
+### Step 3: Creating the profile
 First, let's make a new profile, called **AV Contacts - Picture**
 - Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
 - Choose the **The Hard Way**
 - Command: **picture of (?<name>.+)**
 - **Enable Regex**
 
-### Step 3: Creating the task
+### Step 4: Creating the task
 Now we make our task, called **AV Contacts - Picture**
 - **AutoContacts Query 2.0**
   - Names: **%name**
