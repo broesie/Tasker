@@ -21,7 +21,7 @@ Before you start, refresh your contacts:
 First, let's make a new profile, called **AV Contacts - Picture**
 - Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
 - Choose the **The Hard Way**
-- Command: ```**picture of (?<name>.+)**```
+- Command: ```picture of (?<name>.+)```
 - **Enable Regex**
 
 ### Step 4: Creating the task
