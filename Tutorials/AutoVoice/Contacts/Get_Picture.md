@@ -34,7 +34,7 @@ Now we make our task, called **AV Contacts - Picture**
     - Get Picture: **True**
     - Full Size: **True**
   - Flash: **%acpicturefile**
-  - Open File: **%acpicturefile **
+  - Open File: **%acpicturefile**
 - **Else if %acname!Set**
   - Say: **There is no contact found with that name**
 - **End if**
